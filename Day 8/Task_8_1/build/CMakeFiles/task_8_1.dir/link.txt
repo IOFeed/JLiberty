@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/task_8_1.dir/client.o CMakeFiles/task_8_1.dir/main.o  -o task_8_1 -rdynamic 

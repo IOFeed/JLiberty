@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lion/Projects/JLiberty/Day 8/Task_8_1/client.cpp
+iostream
+-
+main.h
+/home/lion/Projects/JLiberty/Day 8/Task_8_1/main.h
+
+/home/lion/Projects/JLiberty/Day 8/Task_8_1/main.h
+iostream
+-
+
