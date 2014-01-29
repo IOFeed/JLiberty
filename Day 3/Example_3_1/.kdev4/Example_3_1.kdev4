@@ -35,3 +35,6 @@ Project Target=Example_3_1,example_3_1
 Use External Terminal=true
 Working Directory=
 isExecutable=false
+
+[Project]
+VersionControlSupport=kdevgit
