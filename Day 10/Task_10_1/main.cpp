@@ -14,8 +14,8 @@ public:
   ~Circle();
   void setRadius(int &r) {*itsRadius = r;}
   void showRadius() const;
-  void operator++ () {++*itsRadius;}
-  void operator++ (int x);
+  const Circle operator++ () {++*itsRadius; return *this;}
+  const Circle operator++ (int x) {Circle Temp(*this); ++*itsRadius; return Temp;}
 };
 
 void Circle::showRadius() const
@@ -40,13 +40,10 @@ Circle::Circle(const Circle& c)
   *itsRadius = *(c.itsRadius);
 }
 
-
-
 Circle::Circle(int r)
 {
   *itsRadius = r;
 }
-
 
 int main()
 {
@@ -59,6 +56,10 @@ int main()
   Good.showRadius();
   ++Good;
   Good.showRadius();
+  //Good++;
+  Best = Good;
+  cout << "Best now: "; Best.showRadius();
+  
   cin.get();
   return 0;
 }
