@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/example_12_1.dir/main.o  -o example_12_1 -rdynamic 
